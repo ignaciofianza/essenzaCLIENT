@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 
-const OrderSection = () => {
+const OrderSectionMain = () => {
   return (
-    <section className="order-section text-center py-5">
+    <section className="order-section text-center py-5 mb-5">
       <div className="container">
         <h2 className="mb-4">¿Listo para disfrutar?</h2>
         <p className="mb-4">
-          Explorá nuestro menú y realizá tu pedido fácilmente.
+          Explora nuestro menú y realiza tu pedido fácilmente.
         </p>
         <div className="d-flex justify-content-center gap-3">
           <Link to="/login" className="btn btn-dark">
@@ -18,4 +18,4 @@ const OrderSection = () => {
   );
 };
 
-export default OrderSection;
+export default OrderSectionMain;

@@ -1,7 +1,7 @@
 import usePageTitle from "../Hooks/usePageTitle";
 import "../assets/css/Home.css";
 import RestaurantInfo from "../Components/RestaurantInfo";
-import OrderSection from "../Components/OrderSection";
+import OrderSectionMain from "../Components/OrderSectionMain";
 import { ChevronsDown } from "lucide-react";
 
 const Home = () => {
@@ -20,7 +20,7 @@ const Home = () => {
         </div>
       </div>
       <RestaurantInfo />
-      <OrderSection />
+      <OrderSectionMain />
     </div>
   );
 };
