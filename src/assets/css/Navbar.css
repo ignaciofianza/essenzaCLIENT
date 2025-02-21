@@ -1,0 +1,22 @@
+.navbar{
+  background-color: rgba(255, 255, 255, 0.863);
+}
+
+.navbar-toggler,
+.navbar-toggler:focus {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.navbar-toggler::selection {
+  border: none !important;
+}
+
+.navbar-title {
+  font-family: "Red-Rose";
+  text-decoration: none;
+  color: #000000;
+  font-size: 25px;
+  font-weight: 500;
+}
