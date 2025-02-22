@@ -7,14 +7,12 @@ const Login = () => {
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState(""); // Mensaje de error general
-  const [showPassword, setShowPassword] = useState(false); // Estado para mostrar/ocultar contraseña
+  const [error, setError] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
 
-  // Regex para validar email
   const emailRegex = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
 
-  // Usuario de prueba (simulación de base de datos)
   const validUser = {
     email: "test@test.com",
     password: "12345678",
@@ -22,7 +20,7 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setError(""); // Resetear error al intentar nuevamente
+    setError("");
 
     if (!email || !password) {
       setError("Completa todos los campos.");
@@ -39,8 +37,8 @@ const Login = () => {
       return;
     }
 
-    alert('Inicio de sesión exitoso!')
-    navigate('/')
+    alert("Inicio de sesión exitoso!");
+    navigate("/");
     setEmail("");
     setPassword("");
   };
@@ -106,12 +104,9 @@ const Login = () => {
             Regístrate aquí
           </Link>
         </p>
-        <button
-          className="btn btn-outline-secondary mt-2"
-          onClick={() => window.history.back()}
-        >
-          ← Volver atrás
-        </button>
+        <Link to={"/"} className="btn btn-outline-secondary mt-2">
+          Volver al inicio
+        </Link>
       </div>
     </div>
   );
